@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Random Quote Machine</title>
+    <script src="./all.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section>
+      <div class="preloader"><h1>Loading...</h1></div>
+    </section>
+    <section class="box-container bck-color">
+      <div class="quote-box" id="quote-box">
+        <div class="quote-text-container txt-wait">
+          <i class="fas fa-quote-left" id="quote-icon"></i>
+          <h2 id="text"></h2>
+          <h4 class="quote-author" id="author">
+            <span class="line">/</span>
+          </h4>
+        </div>
+        <div class="btn-container">
+          <div class="socialmedia-container">
+            <a
+              href="twitter.com/intent/tweet"
+              class="socialmedia-icon txt-color"
+              ><i class="fab fa-twitter-square link-icon"></i
+            ></a>
+            <a href="www.tumblr.com" class="socialmedia-icon txt-color"
+              ><i class="fab fa-tumblr-square link-icon"></i
+            ></a>
+          </div>
+          <a href="" class="btn bck-color">New Quote</a>
+        </div>
+      </div>
+    </section>
+    <script type="module" src="app.js"></script>
+  </body>
+</html>

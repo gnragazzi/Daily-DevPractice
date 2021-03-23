@@ -1,0 +1,14 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.section-center {
+  width: 80vw;
+  margin: 5rem auto;
+}
+form select,
+label {
+  margin-bottom: 1rem;
+}

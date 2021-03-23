@@ -1,0 +1,97 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.section-center {
+  width: 90vw;
+  max-width: 1170px;
+  /* overflow: hidden; */
+  margin: 0 auto;
+}
+.slideshow-container {
+  position: relative;
+}
+.img-container {
+  position: relative;
+  margin-top: 5rem;
+  border: red;
+  width: 90vw;
+  max-width: 1170px;
+  height: 300px;
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+}
+.img {
+  /* transition: all 0.8s ease-in-out; */
+  position: absolute;
+  width: 102%;
+  height: 100%;
+  object-fit: cover;
+  visibility: hidden;
+}
+.active {
+  visibility: visible;
+}
+.next {
+  transform: translateX(100%);
+}
+.last {
+  transform: translateX(-100%);
+}
+
+.btn-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: white;
+  font-size: 1.3rem;
+}
+.prev-btn,
+.next-btn {
+  cursor: pointer;
+  transition: all 0.2s linear;
+  padding: 1.2rem 0.8rem;
+}
+.prev-btn:hover,
+.next-btn:hover {
+  background: rgb(31, 31, 31, 0.9);
+}
+.prev-btn {
+  border-top-right-radius: 0.6rem;
+  border-bottom-right-radius: 0.6rem;
+}
+.next-btn {
+  border-top-left-radius: 0.6rem;
+  border-bottom-left-radius: 0.6rem;
+}
+.dots-container {
+  margin: 0.5rem auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.dot {
+  margin-right: 0.5rem;
+  cursor: pointer;
+  display: block;
+  content: '';
+  background: #ccc;
+  border-radius: 50%;
+  height: 1rem;
+  width: 1rem;
+  transition: all 0.2s linear;
+}
+.dot:hover:not(.active-dot) {
+  background: #999;
+}
+.active-dot {
+  background-color: #333;
+}

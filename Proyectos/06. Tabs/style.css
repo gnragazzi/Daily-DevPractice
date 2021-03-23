@@ -1,0 +1,50 @@
+@keyframes smooth {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --myBorder: 0.5px lightgray solid;
+}
+.section-center {
+  width: 90vw;
+  margin: 2rem auto;
+}
+
+.tabs-container {
+  border: var(--myBorder);
+}
+.tabs-title {
+  font-size: 0.8rem;
+  border-bottom: var(--myBorder);
+  display: flex;
+  background: #f2f2f2;
+  cursor: pointer;
+}
+.tab-name {
+  padding: 0.5rem 0.8rem;
+  animation: smooth 1s;
+}
+.tab-name.active {
+  background: #bfbfbf;
+}
+.tab-name:hover:not(.active) {
+  background: #d9d9d9;
+}
+.tab-text {
+  font-size: 1rem;
+  padding: 0.5rem 0.8rem;
+  display: none;
+  animation: smooth 1s;
+}
+.tab-text.active {
+  display: block;
+}

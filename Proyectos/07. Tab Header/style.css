@@ -1,0 +1,45 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.section-center {
+  width: 90vw;
+  margin: 5rem auto;
+}
+.content {
+  display: none;
+  background-color: #4062bb;
+  color: white;
+  padding: 6.5rem 4rem;
+  text-align: center;
+}
+.content h1 {
+  font-weight: normal;
+  font-size: 3em;
+  margin-bottom: 0.5rem;
+}
+.content p {
+  font-size: 1em;
+}
+.active {
+  display: block;
+}
+.btn-container {
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+}
+.tab-btn {
+  border: none;
+  padding: 1rem 0;
+  font-size: 1rem;
+  cursor: pointer;
+  background: whitesmoke;
+}
+.tab-btn.active {
+  color: white;
+  background-color: #4062bb;
+}

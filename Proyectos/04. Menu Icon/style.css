@@ -1,0 +1,30 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  background: rgb(248, 248, 248);
+  display: flex;
+  flex-direction: row;
+  padding: 0.8rem 1.3rem;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo img {
+  width: 100px;
+}
+.btn-container {
+  font-size: 3rem;
+  cursor: pointer;
+}
+
+.toggle-btn {
+  transition: all 0.3 ease-in-out;
+}
+
+.hide-icon {
+  transition: all 0.3 ease-in-out;
+  display: none;
+}

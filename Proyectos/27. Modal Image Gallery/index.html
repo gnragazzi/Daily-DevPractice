@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="all.js"></script>
+    <title>Modal Image Gallery</title>
+  </head>
+  <body>
+    <section class="section-center">
+      <div class="img-container">
+        <img src="./images/1.jpg" alt="image" />
+      </div>
+    </section>
+    <div class="modal">
+      <div class="modal-container">
+        <div class="modal-img-container">
+          <p class="count">1/5</p>
+          <img src="./images/1.jpg" alt="img" class="big-img" />
+          <div class="btn-container">
+            <button class="btn prev-btn">
+              <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="btn next-btn">
+              <i class="fas fa-chevron-right"></i>
+            </button>
+          </div>
+        </div>
+        <p class="caption">A Bay</p>
+        <div class="modal-gallery">
+          <img src="" alt="" class="modal-img" />
+        </div>
+      </div>
+      <span class="close-btn"><i class="fas fa-times"></i></span>
+    </div>
+    <script src="app.js" type="module"></script>
+  </body>
+</html>

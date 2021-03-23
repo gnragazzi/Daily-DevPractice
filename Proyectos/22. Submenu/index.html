@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="all.js"></script>
+    <title>Subnav</title>
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="nav-container">
+        <a href="#" class="nav-link">home</a>
+        <a href="#" class="nav-link submenu" data-id="about"
+          >about<span> <i class="fa fa-caret-down"></i></span
+        ></a>
+        <a href="#" class="nav-link submenu" data-id="services"
+          >services<span> <i class="fa fa-caret-down"></i></span
+        ></a>
+        <a href="#" class="nav-link submenu" data-id="partners"
+          >partners<span> <i class="fa fa-caret-down"></i></span
+        ></a>
+        <a href="#" class="nav-link">contact</a>
+      </div>
+    </nav>
+    <main>
+      <section class="section-center">
+        <h1>Subnav/dropdown menu inside a Navigation Bar</h1>
+        <p>
+          Hover over the "about", "services" or "partners" link to see the sub
+          navigation menu.
+        </p>
+      </section>
+    </main>
+    <aside class="sublinks-container"></aside>
+    <script src="app.js" type="module"></script>
+  </body>
+</html>

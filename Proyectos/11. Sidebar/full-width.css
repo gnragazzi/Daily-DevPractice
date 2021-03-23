@@ -1,0 +1,86 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.sidebar {
+  position: fixed;
+  background-color: black;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  transform: translateX(-100%);
+  transition: all 0.2s ease-in-out;
+  z-index: 1;
+}
+
+.show-sidebar {
+  transform: translateX(0%);
+  transition: all 0.5s ease-in-out;
+}
+
+.close-btn {
+  display: none;
+}
+.show-sidebar .close-btn {
+  display: block;
+  color: white;
+  font-size: 2.5rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(-100%, 50%);
+}
+.links-container {
+  width: 20vw;
+  margin: 20vw auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.link {
+  font-size: 2.5rem;
+  text-decoration: none;
+  color: #666;
+  padding: 0 0 0.5rem 1rem;
+}
+
+.link:hover {
+  color: white;
+}
+.section-center {
+  padding: 3rem 2rem;
+  background: wheat;
+  height: 100vh;
+}
+.title {
+  text-decoration: underline;
+  font-size: 5rem;
+  padding-bottom: 3rem;
+}
+.text {
+  font-size: 1rem;
+  text-align: justify;
+}
+.open-btn {
+  font-size: 2.5rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(-100%, 50%);
+}
+
+.open-btn:hover {
+  color: tomato;
+  transition: all 0.5s ease-in-out;
+}

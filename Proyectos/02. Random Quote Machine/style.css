@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@300&display=swap');
+@keyframes hide {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+:root {
+  --myWhite: #edffec;
+
+  --myTrans: all 0.6s ease-in-out;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Catamaran', sans-serif;
+}
+.preloader {
+  position: fixed;
+  z-index: 1;
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+  text-align: center;
+}
+.preloader h1 {
+  font-size: 4rem;
+  margin-top: 2rem;
+  transition: all 10s ease;
+}
+.hide-preloader {
+  animation-name: hide;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-in-out;
+  opacity: 0;
+}
+.hide-it {
+  display: none;
+}
+.box-container {
+  /* background-color: red; */
+  position: relative;
+  height: 100vh;
+  transition: var(--myTrans);
+}
+
+.quote-box {
+  background-color: var(--myWhite);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60vw;
+  max-width: 550px;
+  padding: 2rem 3rem;
+  /* color: red; */
+}
+.quote-text-container {
+  text-align: center;
+  margin-bottom: 1rem;
+  transition: var(--myTrans);
+}
+#quote-icon {
+  font-size: 2rem;
+  margin-right: 0.5rem;
+}
+#text {
+  display: inline;
+  font-size: 2rem;
+}
+.quote-author {
+  text-align: end;
+  padding-top: 0.75rem;
+  font-weight: 300;
+}
+.btn-container {
+  display: flex;
+  /* height: 5rem; */
+  /* background: green; */
+  transition: var(--myTrans);
+
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.socialmedia-container {
+  display: flex;
+  align-items: flex-end;
+}
+
+.socialmedia-icon {
+  display: block;
+  /* background: hotpink; */
+  font-size: 1rem;
+  /* color: red; */
+  align-self: stretch;
+  transition: var(--myTrans);
+}
+.link-icon {
+  /* color: red; */
+  transition: var(--myTrans);
+  vertical-align: bottom;
+  font-size: 3rem;
+  margin-right: 0.4rem;
+}
+
+.link-icon:hover {
+  opacity: 0.8;
+}
+.btn {
+  color: var(--myWhite);
+  /* background-color: red; */
+  text-decoration: none;
+  font-weight: bold;
+  text-align: center;
+  padding: 0.6rem 0.75rem;
+  border-radius: 0.2rem;
+  transition: var(--myTrans);
+}
+.btn:hover {
+  opacity: 0.8;
+}

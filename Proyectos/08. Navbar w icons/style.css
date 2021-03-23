@@ -1,0 +1,31 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.nav {
+  background: #69626d;
+  width: 100vw;
+  display: flex;
+}
+.nav-item {
+  color: white;
+  text-transform: capitalize;
+  display: flex;
+  padding: 1rem 1rem;
+  align-items: center;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+.nav-item.active {
+  background: #b9d2b1;
+}
+.nav-item:hover:not(.active) {
+  background: #343036;
+}
+.nav-item p {
+  padding-left: 0.3rem;
+}

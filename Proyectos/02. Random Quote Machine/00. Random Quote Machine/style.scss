@@ -1,0 +1,57 @@
+$color: #FFF6F6;
+$box-color: #7F40D6;
+*{
+	color: $color;
+	font-family: 'Amatic SC', cursive;
+}
+body {
+	display: flex;
+  	align-items: center;
+  	height: 100vh;
+  	background-color: $color;
+  	#quote-box{
+  		display: flex;
+  		background-color: $box-color;
+  		justify-content: flex-end;
+  		align-itmes: baseline;
+  		margin-left: 33vh;
+  		margin-right: 33vh;
+  		padding: 2em;
+	  	h1{
+	  		color: $color;
+	  		font-size: 40vh;
+	  		text-align: left;
+	  	}
+ 		
+		  	#text {
+		  		font-size: 48px;
+		  	};
+		  	#author {
+		  		font-size: 32px;	
+		  		text-align: right;
+		  	}
+		  	#bottom{
+		  		display: flex;
+		  		align-items: baseline;
+		  		justify-content: center;
+		  		#new-quote {
+		  			background-color: $color;
+		  			border: none;
+		  			color: $box-color;
+		  			font-size: 32px;
+		  			&:hover {
+		  	        opacity: 0.9;
+		  	    	}
+		  		};
+		  		#tweet-quote {
+		  			font-size: 40px;
+		  			padding-left: 25px;
+		  			&:hover {
+		  		       opacity: 0.9;
+		  		    }
+		  		};
+			}
+		}
+	}
+;
+
